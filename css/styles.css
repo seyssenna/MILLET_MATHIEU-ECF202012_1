@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 9%);
+    color: #e9e9e9;
+    width: 100vw;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #e9e9e9
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+span{
+    font-weight: 200;
+}
+
+hr{
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+
+
+/*          HEADER            */
+
+header{
+    text-align: center;
+    height:15vh ;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img{
+    width: 25%;
+}
+
+header a > *{
+    margin: 2%;
+}
+
+
+/*         HAT DE PAGE      */
+
+.index{
+    background-image: url("../img/japaneseNeon.jpg");
+}
+
+.mesArtistes{
+    background-image: url("../img/tokyoNeon.jpg");
+}
+
+.topPageImg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 38vh;
+    position: relative;   
+}
+
+.topPageImg h2{
+    font-weight: 900;
+    font-size: 36px;
+    position: absolute;
+    top: 40%; 
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+    margin-left: 5%;
+}
+
+/*        BUTON D'ACCES A LA PAGE MES ARTISTES        */
+
+#mesArtistesButton{
+    background: linear-gradient(224.13deg, #0028FA 0%, #FF00B8 76.85%), #373737;
+    width: 85%;
+    margin: auto;
+    text-align: center;    
+}
+
+#mesArtistesButton a{
+    display: inline-block;
+}
+
+#mesArtistesButton p{
+    border: solid white 1px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/*      SECTION DE RECHERCHE D'ARTISTE     */
+
+#search *{
+    text-align: center;
+}
+#search span{
+    font-weight: 800;
+}
+#searchBar{
+    width: 70%;
+    background-color: #373737;
+    border-image: linear-gradient(270deg, rgba(5, 0, 255, 0.65) 2.2%, rgba(255, 0, 229, 0.69) 100%) 10;
+}
+
+.searchButton ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.searchButton li{
+    width: 15%;
+}
+.searchButton img{
+    width: 100%;
+    border: solid #828282 1px;
+    border-radius: 10px;
+}
+
+/*         LISTE DES ARTISTES       */
+
+#artiste{
+    text-align: center;
+}
+#artiste h2{
+    letter-spacing: 3px;
+    display: inline-block;
+    border: solid 3px;
+    border-image: linear-gradient(190deg, #FF00E5 10.45%, #000AFF 92.79%) 10;
+    padding: 3%;
+    margin-bottom: 2em;
+}
+
+.card{
+    width: 45%;
+    margin-bottom: 1.5em;
+    color: #c4c4c4;
+}
+.card h3{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.card .img{
+    width: 100%;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card img{
+    display: none;
+}
+
+.artisteContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*        FOOTER         */
+
+footer{
+    background: linear-gradient(180deg, #000000 0%, #FFFFFF 100%), #484848;
+    border-top: solid 1px #FF00E5;
+}
+ footer h4{
+     margin: 0;
+     padding: 3px;
+     border: solid 3px;
+     border-image: linear-gradient(190deg, #FF00E5 10.45%, #000AFF 92.79%) 10;
+     width: 35%;
+     margin: auto;
+ }
+.footerContainer{
+    margin-left: 1em;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footerLogo{
+    text-align: center;
+}
+
+footer img{
+    width: 20%;
+}
+
+footer li{
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
