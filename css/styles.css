@@ -64,10 +64,6 @@ header a > *{
     background-image: url("../img/japaneseNeon.jpg");
 }
 
-.mesArtistes{
-    background-image: url("../img/tokyoNeon.jpg");
-}
-
 .topPageImg{
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,6 +80,7 @@ header a > *{
     transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
     margin-left: 5%;
 }
+
 
 /*        BUTON D'ACCES A LA PAGE MES ARTISTES        */
 
@@ -136,10 +133,10 @@ header a > *{
 
 /*         LISTE DES ARTISTES       */
 
-#artiste{
+#artiste, .mesArtistesPage, .artisteDuMoment{
     text-align: center;
 }
-#artiste h2{
+#artiste h2, .mesArtistesPage h2, .artisteDuMoment h2{
     letter-spacing: 3px;
     display: inline-block;
     border: solid 3px;
@@ -165,7 +162,7 @@ header a > *{
     background-position: center;
     
 }
-.card img{
+.card img, .cardMesArtistes img{
     display: none;
 }
 
@@ -178,6 +175,7 @@ header a > *{
 /*        FOOTER         */
 
 footer{
+    margin-top: 3em;
     background: linear-gradient(180deg, #000000 0%, #FFFFFF 100%), #484848;
     border-top: solid 1px #FF00E5;
 }
@@ -211,3 +209,106 @@ footer li{
     font-size: 12px;
 }
 
+/* ------PAGE MES ARTISTES------ */
+/* HAUT DE PAGE */
+.mesArtistes{
+    background-image: url("../img/tokyoNeon.jpg");
+}
+
+.mesArtistes h2{
+    text-shadow: 4px 4px 4px rgba(5, 0, 255, 0.47);
+}
+
+/* MES ARTISTES */
+.cardMesArtistes{
+    margin-bottom: 3em;
+}
+
+.cardMesArtistes h3{
+    margin-bottom: 0;
+    color: #c4c4c4;
+    font-weight: 500;
+}
+.cardMesArtistes .img{
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardMesArtistes .tS{
+    background-position: 10% 35%;
+}
+
+.cardMesArtistes .mJ{
+    background-position: 10% 10%;
+}
+
+iframe{
+    width: 100%;
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.24);
+}
+
+/* ARTISTE DU MOMENT */
+
+.artisteDuMoment>h3, .artisteDuMoment>p{
+    color: #c4c4c4;
+    width: 75%;
+    margin: auto;
+}
+.artisteDuMomentBackgroundContainer{
+    position: relative;
+    text-align: center;
+}
+
+.artisteDuMomentBackground{
+    height: 350px;
+    width: 90%;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    filter : blur(2px)
+}
+
+.artisteDuMoment img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);    
+    width: 65%;
+    max-height: 70%;
+}
+
+.artisteDuMoment h3{
+    margin-top: 0;
+}
+
+.artisteDuMoment>p{
+    text-align: left;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.concertDate{
+    background: linear-gradient(200deg, #0028FA 0%, #FF00B8 76.85%), #373737;
+    width: 90%;
+    margin: auto;
+    height: 180px;
+    text-align: center; 
+}
+
+.concertDate h3{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    border: solid white 1px;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1em;
+}
+
+.concertDate p{
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+}
