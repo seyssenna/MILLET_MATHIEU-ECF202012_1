@@ -1,5 +1,7 @@
+/* IMPORTATION DES POLICES */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* COMPORTEMENT GENERALE DE LA PAGE */
 body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
@@ -9,30 +11,22 @@ body{
     color: #e9e9e9;
     width: 100vw;
 }
-
-
-
 a{
     text-decoration: none;
     color: #e9e9e9
 }
-
 ul{
     list-style: none;
     padding: 0;
 }
-
 span{
     font-weight: 200;
 }
-
 hr{
     width: 50%;
     margin-top: 2em;
     margin-bottom: 2em;
 }
-
-
 
 
 /*          HEADER            */
@@ -85,7 +79,7 @@ header a > *{
 /*        BUTON D'ACCES A LA PAGE MES ARTISTES        */
 
 #mesArtistesButton{
-    background: linear-gradient(224.13deg, #0028FA 0%, #FF00B8 76.85%), #373737;
+    background: linear-gradient(190deg, #0028FA 0%, #FF00B8 76.85%), #373737;
     width: 85%;
     margin: auto;
     text-align: center;    
@@ -133,10 +127,10 @@ header a > *{
 
 /*         LISTE DES ARTISTES       */
 
-#artiste, .mesArtistesPage, .artisteDuMoment{
+#artiste, .mesArtistesPage, .artisteDuMoment, .artisteDuMomentDesktop{
     text-align: center;
 }
-#artiste h2, .mesArtistesPage h2, .artisteDuMoment h2{
+#artiste h2, .mesArtistesPage h2, .artisteDuMoment h2, .artisteDuMomentDesktop h2{
     letter-spacing: 3px;
     display: inline-block;
     border: solid 3px;
@@ -255,6 +249,10 @@ iframe{
 
 /* ARTISTE DU MOMENT */
 
+.artisteDuMomentDesktop{
+    display: none;
+}
+
 .artisteDuMomentText{
     color: #c4c4c4;
     width: 75%;
@@ -317,6 +315,9 @@ p.artisteDuMomentText{
     margin-top: 1em;
 }
 
+
+
+/* |||||||||||||||||||| FORMAT TABLETTE ||||||||||||||||||||||||| */
 @media screen and (min-width:640px){
 
     hr{
@@ -411,5 +412,117 @@ p.artisteDuMomentText{
         transform: translateY(-50%) translateX(-50%);    
         width: 50%;
         max-height: 100%;
+    }
+  }
+
+
+
+  /* |||||||||||||||||||| FORMAT DESKTOP ||||||||||||||||||||||||| */
+  @media screen and (min-width:1024px){
+    
+    /* HAUT DE PAGE */
+    .topPageImg{
+        background-position: center;
+        height: 60vh;
+    }
+    .topPageImg h2{
+        left: 10%;
+        font-size: 60px;
+    }
+
+    /* MAIN / largeur de 80% pour la version desktop */
+    .main{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* BOUTTON D'ACCES A MES ARTISTES / PREMIUM */
+    #mesArtistesButton{
+        width: 100%;
+    }
+    #mesArtistesButton p{
+        border: solid white 2px;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    /* SECTION DE RECHERCHE D'ARTISTES */
+    #search{
+        width: 80%;
+        margin: auto;
+    }
+    .searchButton{
+        width: 40%;
+    }
+
+    /* LISTE D'ARTISTE */
+    .card{
+        width: 18%;
+    }
+    .card .img{
+        height: 230px;
+    }
+    #artiste h2, .mesArtistesPage h2, .artisteDuMoment h2, .artisteDuMomentDesktop h2{
+        padding: 1% 2% 1% 2%;
+    }
+
+    /* PAGE MES ARTISTES */
+    .cardMesArtistes{
+        width: 20%;
+    }
+    .cardMesArtistes .img{
+        height: 230px;
+    }
+    iframe{
+        width: 70%;
+        height: 500px;
+        margin: auto auto 3em auto;
+        display : none;
+    }
+
+    /* ARTISTE DU MOMENT */
+    .artisteDuMoment{
+        display: none;
+    }
+    .artisteDuMomentDesktop{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .artisteDuMomentContainerDesktop{
+        background-color: #272727;
+        display: flex;
+        justify-content: space-around;
+    }
+    .concertDate{
+        width: 100%;
+    }
+    .artisteDuMomentContainerDesktop img{
+        width: 40%;
+    }
+    .rightPart{
+        background-color: #272727;
+    }
+    .rightPart h3{
+        color: ivory;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    /* FOOTER */
+    .footerContainer ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer a{
+        margin-left: 5em;
+    }
+
+    #footerLogo{
+        display: flex;
+        justify-content: space-around;
+    }
+    #footerLogo h4{
+        margin-left: 10px;
     }
   }
