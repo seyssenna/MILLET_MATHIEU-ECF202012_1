@@ -220,6 +220,10 @@ footer li{
 }
 
 /* MES ARTISTES */
+.mesArtistesContainerTab{
+    display: none;
+}
+
 .cardMesArtistes{
     margin-bottom: 3em;
 }
@@ -251,7 +255,7 @@ iframe{
 
 /* ARTISTE DU MOMENT */
 
-.artisteDuMoment>h3, .artisteDuMoment>p{
+.artisteDuMomentText{
     color: #c4c4c4;
     width: 75%;
     margin: auto;
@@ -283,7 +287,7 @@ iframe{
     margin-top: 0;
 }
 
-.artisteDuMoment>p{
+p.artisteDuMomentText{
     text-align: left;
     text-align: justify;
     margin-bottom: 2em;
@@ -312,3 +316,100 @@ iframe{
     margin: auto;
     margin-top: 1em;
 }
+
+@media screen and (min-width:640px){
+
+    hr{
+        width:30%;
+    }
+   
+    /* HAUT DE PAGE / page 1 et 2*/
+    .topPageImg{
+        background-image: url("../img/bedroom.jpg");
+        background-position: top;
+    }
+    .topPageImg h2{
+        font-size: 50px;
+    }
+
+    /* BOUTON D'ACCES A MES ARTISTES / PREMIUM  / page 1 et 2*/
+    #mesArtistesButton{
+        width: 60%;
+    }
+    #mesArtistesButton p{
+        font-size: 24px;
+    }
+
+    /* SECTION DE RECHERCHE D'ARTISTES / page 1*/
+    #search{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .searchButton{
+        width: 50%;
+    }
+    .searchBar{
+        width: 50%;
+    }
+
+    /* LISTE D'EARTISTES / page 1*/
+    .card{
+        width: 23%;
+    }
+
+    /* MES ARTISTES / page 2 */
+    .mesArtistesContainer{
+        display: none;
+    }
+    .mesArtistesContainerTab{
+        display: block;
+    }
+    .mesArtistesCardContainer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .cardMesArtistes{
+        width: 23%;
+        height: auto;
+    }
+    .cardMesArtistes .img{
+        height: 170px;
+    }
+
+    /* iframe VIDEO */
+    iframe{
+        width: 80%;
+        height: 450px;
+        margin: auto auto 3em auto;
+        display : none;
+    }
+    .active{
+        display: block;
+    }
+
+    /* ARTISTE DU MOMENT */
+    .artisteDuMomentContainer{
+        width: 90%;
+        margin: auto;
+        background-color: #272727;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .artisteDuMomentBackground{
+        height: 450px;
+        width: 80%;
+        margin: auto;
+        background-size: cover;
+        background-position: center;
+        filter : blur(2px)
+    }
+    
+    .artisteDuMoment img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);    
+        width: 50%;
+        max-height: 100%;
+    }
+  }
