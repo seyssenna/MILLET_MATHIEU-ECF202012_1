@@ -84,3 +84,4 @@ usherCard.addEventListener("click", () => {
     michaelJacksonVideo.classList.remove('active');
     toneStithVideo.classList.remove("active");
 })
+
