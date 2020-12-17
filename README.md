@@ -76,7 +76,7 @@ en cliquant sur un artiste on fait apparaitre la video associé et on entour l'i
 de l'artiste selectionné avec une bordure .
 
 **************************************************************************************************************
------------------------------------------ TRIKS ---------------------------------------------------------
+----------------------------------------- TRICKS ---------------------------------------------------------
 
 toutes les image du site (a l'exception du logo) sont en fait des "background-image"
 j'ai choisi de faire ca pour pouvoir travailler le positionement de l'image plus facilement 
