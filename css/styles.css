@@ -29,6 +29,8 @@ hr{
 }
 
 
+
+
 /*          HEADER            */
 
 header{
@@ -317,7 +319,9 @@ p.artisteDuMomentText{
 
 
 
-/* |||||||||||||||||||| FORMAT TABLETTE ||||||||||||||||||||||||| */
+  /* |||||||||||||||||||| FORMAT TABLETTE ||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
 @media screen and (min-width:640px){
 
     hr{
@@ -377,6 +381,11 @@ p.artisteDuMomentText{
         height: 170px;
     }
 
+    .cardClicked{
+        border: solid 3px;
+        border-image: linear-gradient(190deg, #FF00E5 10.45%, #000AFF 92.79%) 10;
+    }
+
     /* iframe VIDEO */
     iframe{
         width: 80%;
@@ -416,8 +425,8 @@ p.artisteDuMomentText{
   }
 
 
-
-  /* |||||||||||||||||||| FORMAT DESKTOP ||||||||||||||||||||||||| */
+  /* |||||||||||||||||||| FORMAT DESKTOP |||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   @media screen and (min-width:1024px){
     
     /* HAUT DE PAGE */
