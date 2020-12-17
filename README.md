@@ -4,6 +4,7 @@ Projet d'évaluation en cours de formation, création d'une maquette graphique s
 le site n'est pas fonctionnel mais contient 2 pages.
 cliquez sur "acceder a mes artistes" pour ouvrir la page 2.
 cliquez sur le logo en haut de page pour revenir a la page d'accueil.
+sur la page 2 les images des artistes en version tablette et desktop sont cliquable.
 
 #convention de nommage : camelCase
 #police : Raleway
